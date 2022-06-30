@@ -3,12 +3,12 @@
 /**
  * main - entry point
  *
- * Return: always 0 (success)
+ * Return: 1
  */
 
 int main(void)
 {
 	fprintf("%s\n", "and that piece of art is useful\" - Dora Korpar, 2015-10-19");
 
-	return (0);
+	return (1);
 }
