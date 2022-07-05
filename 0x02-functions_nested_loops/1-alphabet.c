@@ -3,7 +3,7 @@
 /**
  * print_alphabet - prints the lowercase alphabet from 'a' - 'z'
  *
- * Return: always 0 (success)
+ * Return: void
  */
 
 void print_alphabet(void)
