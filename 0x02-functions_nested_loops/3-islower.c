@@ -6,11 +6,8 @@
  * Return: 1 (true) 0 (otherwise)
  */
 
-int _islower(char c)
+int _islower(int c)
 {
-	int c2;
-	c2 = (int) c;
-
 	if (c2 >= 97 && c2 <= 122)
 		return (0);
 	else
