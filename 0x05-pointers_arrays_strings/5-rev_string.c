@@ -16,12 +16,12 @@ void rev_string(char *s)
 	int last_index = length - 1;
 	char *new_string = s;
 	int i;
-	int j = 1;
+	int j = -1;
 
 	for (i = last_index; i >= 0; i--)
 	{
-		*(new_string + j) = *(s + i);
 		j++;
+		*(new_string + j) = *(s + i);
 	}
 
 	*s = *new_string;
