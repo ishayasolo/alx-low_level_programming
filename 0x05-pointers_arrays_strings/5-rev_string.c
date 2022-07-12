@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * rev_string - prints a string in reverse
+ * rev_string - reverses a string
  *
  * @s: string to be reversed
  *
@@ -17,5 +17,5 @@ void rev_string(char *s)
 	int i;
 
 	for (i = last_index; i >= 0; i--)
-		putchar(s[i]);
+		*s += *(s + i);
 }
