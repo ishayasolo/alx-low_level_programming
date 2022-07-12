@@ -15,11 +15,8 @@ void puts2(char *str)
 	int length = strlen(str);
 	int i;
 
-	for (i = 0; i < length - 1; i += 2)
+	for (i = 0; i < length; i += 2)
 		putchar(str[i]);
-
-	if (str[length - 1] == '.')
-		putchar(str[length - 1]);
 
 	putchar('\n');
 }
