@@ -3,7 +3,7 @@
 /**
  * reset_to_98 - function that modifies the value of a variable pointed to
  *
- * @n - pointer to the variable to be updated
+ * @n: pointer to the variable to be updated
  *
  * Return: void (nothing)
  */
