@@ -14,7 +14,7 @@ void rev_string(char *s)
 {
 	int length = strlen(s);
 	int last_index = length - 1;
-	char[] new_string;
+	char new_string[strlen(s)];
 	int i;
 	int j = -1;
 
