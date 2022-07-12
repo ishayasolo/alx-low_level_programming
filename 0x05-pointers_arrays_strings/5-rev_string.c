@@ -14,8 +14,15 @@ void rev_string(char *s)
 {
 	int length = strlen(s);
 	int last_index = length - 1;
+	char new_string[length];
 	int i;
+	int j = 0;
 
 	for (i = last_index; i >= 0; i--)
-		*s += *(s + i);
+	{
+		new_string[j] = *(s + i);
+		j++;
+	}
+
+	*s = new_string;
 }
