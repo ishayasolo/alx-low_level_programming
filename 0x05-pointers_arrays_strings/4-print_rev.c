@@ -17,5 +17,5 @@ void print_rev(char *s)
 	int i;
 
 	for (i = last_index; i >= 0; i--)
-		putchar(*(s + (i - 1)));
+		putchar(*(s + i));
 }
