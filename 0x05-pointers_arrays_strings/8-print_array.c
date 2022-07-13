@@ -13,7 +13,6 @@
 void print_array(int *a, int n)
 {
 	int i;
-	int n;
 
 	n = sizeof(a) / sizeof(int);
 
