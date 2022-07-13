@@ -20,8 +20,8 @@ void rev_string(char *s)
 
 	for (i = last_index; i >= 0; i--)
 	{
-		new_string[j] = s[i];
-		j++;
+		while (j != last_index)
+			new_string[j++] = s[i];
 	}
 
 	*s = *new_string;
