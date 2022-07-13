@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h>
 
 /**
  * print_array - prints n number of items in an array separated by commas
@@ -16,7 +15,7 @@ void print_array(int *a, int n)
 	int i;
 	int n;
 
-	int n = strlen(a);
+	n = sizeof(a) / sizeof(int);
 
 	for (i = 0; i < n; i++)
 	{
