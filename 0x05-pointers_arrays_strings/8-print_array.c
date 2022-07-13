@@ -13,8 +13,10 @@
 void print_array(int *a, int n)
 {
 	int i;
+	int array_size;
 
-	n = sizeof(a) /((int *) sizeof(int));
+	array_size = (int) sizeof(a);
+	n = array_size / sizeof(int);
 
 	for (i = 0; i < n; i++)
 	{
