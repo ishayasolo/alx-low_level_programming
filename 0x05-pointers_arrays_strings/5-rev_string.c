@@ -22,7 +22,7 @@ void rev_string(char *s)
 	{
 		if (j != last_index)
 		{
-			new_string[j++] = s[i];
+			new_string[j] = s[i];
 			j++;
 		}
 	}
