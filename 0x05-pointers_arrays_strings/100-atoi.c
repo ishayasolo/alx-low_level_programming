@@ -12,13 +12,14 @@
 
 int _atoi(char *s)
 {
-	int num, digit, i;
-	
+	int num, digit, i, length;
+
+	length = strlen(s);	
 	num = atoi(s);
 
 	if (num == 0)
 	{
-		for (i = 0; i < strlen(s); i++)
+		for (i = 0; i < length; i++)
 		{
 			if (s[i] >= '0' && s[i] <= '9')
 			{
