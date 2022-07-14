@@ -9,7 +9,7 @@
  * @dest: string to be modified
  * @str: string to be appended
  *
- * Return: @dest (modified string)
+ * Return: dest (modified string)
  */
 
 char *_strcat(char *dest, char *src)
