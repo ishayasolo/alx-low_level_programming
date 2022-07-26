@@ -13,13 +13,18 @@ char *_strdup(char *str)
 {
 	char *strDup;
 	int i, j;
-	
+
 	i = 0;
 	j = 0;
 
+	if (str == NULL)
+		return (NULL);
+
 	while (str[i] != '\0')
 		i++;
-	
+
+	i++;
+
 	strDup = malloc(sizeof(*str) * i);
 
 	if (strDup == NULL)
@@ -30,6 +35,6 @@ char *_strdup(char *str)
 		strDup[j] = str[j];
 		j++;
 	}
-	
+
 	return (strDup);
 }
