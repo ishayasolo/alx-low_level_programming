@@ -11,14 +11,14 @@
 
 char *create_array(unsigned int size, char c)
 {
-	if (size == 0)
-		return NULL;
-
 	char *arr;
 	int i;
 
-	i = 0;
+	if (size == 0)
+		return NULL;
+
 	arr = malloc(sizeof(*arr) * size);
+	i = 0;
 
 	while(arr[i] != '\0')
 	{
@@ -26,5 +26,5 @@ char *create_array(unsigned int size, char c)
 		i += 1;
 	}
 
-	return *arr;
+	return arr;
 }
