@@ -14,10 +14,7 @@ char *str_concat(char *s1, char *s2)
 	char *s3;
 	int i, j, k, l;
 
-	i = 0;
-	j = 0;
-	k = 0;
-	l = 0;
+	i = j = k = l = 0;
 
 	if (s1 == NULL)
 		s1 = "";
