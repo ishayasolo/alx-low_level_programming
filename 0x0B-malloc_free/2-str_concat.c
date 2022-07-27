@@ -44,12 +44,12 @@ char *str_concat(char *s1, char *s2)
 
 	while (s2[l] != '\0')
 	{
-		s3[k + 1] = s2[l];
+		s3[k] = s2[l];
 		k++;
 		l++;
 	}
 
-	s3[k + 1] = '\0';
+	s3[k] = '\0';
 
 	return (s3);
 }
